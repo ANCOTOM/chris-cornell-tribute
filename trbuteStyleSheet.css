@@ -1,257 +1,152 @@
-/*Estilo del contenedor principal*/
-.container{
+/* Estilo del contenedor principal */
+.container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    /*background-color: rgba(255, 255, 255, 0.8);*/
-    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
     border-radius: 8px;
 }
 
-header{
+/* Estilo del header */
+header {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px;
-    border-radius: 8px; /* Redondear el header para seguir el estilo general */
+    border-radius: 8px;
 }
 
+/* Estilo del body */
 body {
-    background-image: url('soundgardenBackground.jpg'); /* Cambia el nombre por el de tu archivo */
-    background-size: cover; /* Hace que la imagen ocupe todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen */
+    background-image: url('soundgardenBackground.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
 }
 
-/* Selector para toda la seccion que incluya content*/
-.content{
+/* Sección de contenido */
+.content {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 20px;
-    border-radius: 8px;/*redondea las esquinas*/
+    border-radius: 8px;
 }
 
-.content-title{
+.content-title {
     font-size: 1.8rem;
     margin-bottom: 15px;
     text-align: center;
 }
 
-/*Modificar el wrapper, que seria la imagen y el texto*/
-.content-wrapper{
+/* Modificar la sección donde está la imagen y el texto */
+.content-wrapper {
     display: flex;
     align-items: center;
-    gap: 20px;/*Espacio entre la imagen y el texto*/
-}
-
-.content-image{
-    width: 200px;
-    border-radius: 8px;
-    object-fit: cover;/*Ajusta la imagen al tamaño especificado (200px en este caso)*/
-}
-
-.content-text{
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-    text-align: justify;
-}
-
-/*Seccion dedicada a las bandas de Chris*/
-.bands-section{
-    padding: 20;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-top: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.bands-title{
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-/*Estilo del contenedor principal*/
-.container{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    /*background-color: rgba(255, 255, 255, 0.8);*/
-    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
-    border-radius: 8px;
-}
-
-header{
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px; /* Redondear el header para seguir el estilo general */
-}
-
-body {
-    background-image: url('soundgardenBackground.jpg'); /* Cambia el nombre por el de tu archivo */
-    background-size: cover; /* Hace que la imagen ocupe todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed;
-}
-
-/* Selector para toda la seccion que incluya content*/
-.content{
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-top: 20px;
-    border-radius: 8px;/*redondea las esquinas*/
-}
-
-.content-title{
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-/*Modificar el wrapper, que seria la imagen y el texto*/
-.content-wrapper{
-    display: flex;
-    align-items: center;
-    gap: 20px;/*Espacio entre la imagen y el texto*/
-}
-
-.content-image{
-    width: 200px;
-    border-radius: 8px;
-    object-fit: cover;/*Ajusta la imagen al tamaño especificado (200px en este caso)*/
-}
-
-.content-text{
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-    text-align: justify;
-}
-
-/*Seccion dedicada a las bandas de Chris*/
-.bands-section{
-    padding: 20;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-top: 20px;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 100%;
-}
-
-.bands-title{
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.bands-wrapper{
-    display: flex;
-    justify-content: center;
     gap: 20px;
-    flex-wrap: nowrap; /*Acomoda las imagenes a pantallas mas pequeñas*/
-    max-width: 900px; /* Ajusta el ancho del grupo de imágenes */
-    margin: 0 auto; /* Centra todo horizontalmente */
 }
 
-.band-card{
-    position: relative;
-    width: 220px;
-    height: 280px;
-    overflow: hidden;/*para ocultar el contenido que se salga de los limites*/
+.content-image {
+    width: 200px;
     border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease;/*Encargado de la animacion del mouse*/
+    object-fit: cover;
 }
 
-.band-card:hover .band-image{
-    opacity: 0.2;
+.content-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
 }
 
-.band-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /*Ajusta la imagen al tamaño del contenedor*/
-    transition: opacity 0.3s ease;
-}
-
-.band-card:hover .band-image {
-    opacity: 0.2; /* Reduce la visibilidad de la imagen al pasar el mouse */
-}
-
-.band-info{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Sección de bandas */
+.bands-section {
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
-.band-card:hover .band-info {
-    opacity: 1; /* Muestra el texto al pasar el mouse */
+/* Contenedor principal de las tarjetas */
+.bands-wrapper {
+    display: flex;
+    flex-direction: column; /* Coloca cada banda en su propia línea */
+    align-items: center;
+    gap: 20px;
 }
 
+/* Tarjeta individual */
+.band-card {
+    display: flex;
+    align-items: center; /* Alinea imagen y texto en la misma fila */
+    gap: 20px; /* Espaciado entre imagen y texto */
+    width: 100%;
+    max-width: 800px; /* Tamaño máximo de la tarjeta */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen de la banda */
+.band-card a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.band-image {
+    width: 200px; /* Tamaño de la imagen */
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en la imagen */
+.band-card a:hover .band-image {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Información sobre la banda */
+.band-info {
+    text-align: left;
+    max-width: 500px;
+}
+
+/* Títulos */
 .band-info h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #000;
+    color: #222;
 }
 
+/* Descripción */
 .band-info p {
     font-size: 1rem;
     color: #555;
+    line-height: 1.4;
 }
 
-.band-card{
-    position: relative;
-    width: 250px;
-    height: 300px;
-    overflow: hidden;/*para ocultar el contenido que se salga de los limites*/
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease;/*Encargado de la animacion del mouse*/
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .band-card {
+        flex-direction: column; /* Apila imagen y texto en dispositivos pequeños */
+        text-align: center;
+        align-items: center;
+    }
+
+    .band-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .band-info {
+        text-align: center;
+    }
 }
 
-.band-card:hover .band-image{
-    opacity: 0.2;
-}
 
-.band-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /*Ajusta la imagen al tamaño del contenedor*/
-    transition: opacity 0.3s ease;
-}
 
-.band-card:hover .band-image {
-    opacity: 0.2; /* Reduce la visibilidad de la imagen al pasar el mouse */
-}
-
-.band-info{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.band-card:hover .band-info {
-    opacity: 1; /* Muestra el texto al pasar el mouse */
-}
-
-.band-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.band-info p {
-    font-size: 1rem;
-    color: #555;
-}
 
 
